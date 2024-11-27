@@ -3,6 +3,7 @@ import { authOptions } from "../auth/[...nextauth]/options";
 import dbConnect from "../../../lib/dbConnect";
 import UserModel from "../../../model/User";
 
+// Update Accepting Messages Status
 export async function POST(request: Request) {
   await dbConnect();
 
@@ -56,6 +57,7 @@ export async function POST(request: Request) {
   }
 }
 
+// Fetch Accepting Messages Status
 export async function GET(request: Request) {
   await dbConnect();
 
