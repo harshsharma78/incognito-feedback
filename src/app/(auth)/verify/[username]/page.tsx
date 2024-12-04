@@ -6,17 +6,17 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../../../components/ui/form";
-import { Input } from "../../../components/ui/input";
-import { Button } from "../../../components/ui/button";
+} from "../../../../components/ui/form";
+import { Input } from "../../../../components/ui/input";
+import { Button } from "../../../../components/ui/button";
 import { useForm } from "react-hook-form";
 import { useParams, useRouter } from "next/navigation";
-import { useToast } from "../../../hooks/use-toast";
+import { useToast } from "../../../../hooks/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { verifySchema } from "../../../schemas/verifySchema";
+import { verifySchema } from "../../../../schemas/verifySchema";
 import { z } from "zod";
 import axios, { AxiosError } from "axios";
-import { ApiResponse } from "../../../types/ApiResponse";
+import { ApiResponse } from "../../../../types/ApiResponse";
 
 const VerifyAccount = () => {
   const router = useRouter();
